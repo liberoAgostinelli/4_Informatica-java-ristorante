@@ -30,6 +30,12 @@ public class Cameriere {
 	public void setCognome(String cognome) {
 		this.cognome = cognome;
 	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.nome + " " + this.cognome;
+	}
 	
 	
 }

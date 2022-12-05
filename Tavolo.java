@@ -2,7 +2,8 @@ package myPkg;
 
 public class Tavolo {
 
-	private static int numeroTavolo = 0;
+	private static int contatoreTavolo = 0;
+	private int numeroTavolo;
 	private int numeroPosti;
 	private double conto;
 	private boolean libero;
@@ -10,7 +11,8 @@ public class Tavolo {
 	private Cameriere cameriere;
 	
 	public Tavolo() {
-		numeroTavolo++;
+		numeroTavolo = contatoreTavolo;
+		contatoreTavolo++;
 	}
 	
 	public void setNumeroTavolo(int n) {
